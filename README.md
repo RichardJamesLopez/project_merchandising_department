@@ -58,27 +58,27 @@ This is not a complete metric when sorted as such. Coupling the "Profit Margin" 
 
 <br><b>Highest Profit Margins</b></br>
 
- ![profitmarginsbystore](/Users/RichardJamesLopez/Dropbox/RJL_-_Personal/1010/images/2017/12/profitmarginsbystore.png)
+ ![](/images/2017/12/profitmarginsbystore.png)
 
 
 <br><b>Lowest Profit Margins</b></br>
 
-![profitmarginsbystorelowest](/Users/RichardJamesLopez/Dropbox/RJL_-_Personal/1010/images/2017/12/profitmarginsbystorelowest.png)
+![](/images/2017/12/profitmarginsbystorelowest.png)
 
 This table however, is a bit taxing on the eye. To contextualize by all stores, a scatterplot will help.
 
-![2014storesalesbyprofitmargins](/Users/RichardJamesLopez/Dropbox/RJL_-_Personal/1010/images/2017/12/2014storesalesbyprofitmargins.png)
+![](/images/2017/12/2014storesalesbyprofitmargins.png)
 
 This helps us show the that the stores with the lowest "Profit Margin" have varying sales, but not particularly low amount of "Total Sales" for 2014. However, if you combine the data from the table and this visualization, we can find a pattern among the lowest "Profit Margin" stores.
 
 
-![2014storesalesbyprofitmarginszoomedin2](/Users/RichardJamesLopez/Dropbox/RJL_-_Personal/1010/images/2017/12/2014storesalesbyprofitmarginszoomedin2.png)
+![](/images/2017/12/2014storesalesbyprofitmarginszoomedin2.png)
 
 The stores with the thinnest margins generally come from Illinois. However, they still maintain a respectable amount of Sum of Sales. This provides data points for comparison to those stores with the widest profit margins.
 
 
 
-![2014storesalesbyprofitmarginszoomedinbest](/Users/RichardJamesLopez/Dropbox/RJL_-_Personal/1010/images/2017/12/2014storesalesbyprofitmarginszoomedinbest.png)
+![](/images/2017/12/2014storesalesbyprofitmarginszoomedinbest.png)
 
 Focusing on the right half of the scatterplot, Florida stores have the widest "Profit Margin". This strength, however, doesn't translate into strong "Average XSales". In fact, their sales are towards the bottom of stores that have wider profit margins.
 
@@ -90,7 +90,7 @@ By simply re-sorting the original table, you see that Florida has the 3 stores w
 <sort col="avg_xsales" dir="down"/>
 ```
 
-![highestavgxsalesbystore](/Users/RichardJamesLopez/Dropbox/RJL_-_Personal/1010/images/2017/12/highestavgxsalesbystore.png)
+![](/images/2017/12/highestavgxsalesbystore.png)
 
 While this is more conclusive evidence, this is still not the complete story. This highlights that stores from Florida can be one of 2 things
 1. pricing their strawberries higher than the rest (approximately $2 more than the average), or
@@ -101,7 +101,7 @@ The fact that Florida also has the highest profit margins supports the 1st optio
 We can test this assumption about Florida's "Average Cost" for strawberries as compared to the other states.  
 
 
-![highestavgcostbystate](/Users/RichardJamesLopez/Dropbox/RJL_-_Personal/1010/images/2017/12/highestavgcostbystate.png)
+![](/images/2017/12/highestavgcostbystate.png)
 
 Florida stores' "Average Cost" is higher than the national average by 40-50 cents. Florida stores also do not have the costliest strawberries and their price above the national average outpaces their cost above the national average. This leads me to maintain that the main driver of potential sales in Florida is more of option #1 - the prices of strawberries are too high.
 
@@ -140,21 +140,21 @@ Below is the code, table and visualization for Customers by "Average Age" and th
 
 <br><b>Average Age of Customer by State Barchart</b></br>
 
-![averageageofcustomerbystate](/Users/RichardJamesLopez/Dropbox/RJL_-_Personal/1010/images/2017/12/averageageofcustomerbystate.png)
+![](/images/2017/12/averageageofcustomerbystate.png)
 
 <br><b>Average Age of Customer by State Table</b></br>
 
 
-![averageagebybstateandtransationstable](/Users/RichardJamesLopez/Dropbox/RJL_-_Personal/1010/images/2017/12/averageagebybstateandtransationstable.png)
+![](/images/2017/12/averageagebybstateandtransationstable.png)
 
 These demographics begin to tell a story about the "Average Age" of customer, but it makes more sense if we group this by "Region".
 
-![averageagebyregion](/Users/RichardJamesLopez/Dropbox/RJL_-_Personal/1010/images/2017/12/averageagebyregion.png)
+![](/images/2017/12/averageagebyregion.png)
 
 This doesn't get us back any meaningful disparity by "Age". However, this table indicates that close to half of sales comes from stores in the North. It is worth looking into the regional disparity and whether stores have sales disparity by region by starting off by ranking Aggregate sales by "Store".
 
 
-![storeaggregatesalesalltime](/Users/RichardJamesLopez/Dropbox/RJL_-_Personal/1010/images/2017/12/storeaggregatesalesalltime.png)
+![](/images/2017/12/storeaggregatesalesalltime.png)
 
 This table highlights from where the highest grossing stores are coming. There doesn't appear to be a pattern to why some states have higher gross sales than others. At this point, it becomes clear that it is necessary subset the time series data when using aggregate numbers as some stores may not have been selling strawberries for the whole 4 year period. To make a comparable aggregate sales number, adding a select statement to the query will filter sales for the latest sales number.
 
@@ -164,11 +164,11 @@ This table highlights from where the highest grossing stores are coming. There d
 
 This produces the following table.
 
-![2014aggsalesperstore](/Users/RichardJamesLopez/Dropbox/RJL_-_Personal/1010/images/2017/12/2014aggsalesperstore.png)
+![](/images/2017/12/2014aggsalesperstore.png)
 
 While sorted by the highest grossing "Store", the least grossing stores are most telling.
 
-![2014aggsalesperstorebottomrank](/Users/RichardJamesLopez/Dropbox/RJL_-_Personal/1010/images/2017/12/2014aggsalesperstorebottomrank.png)
+![](/images/2017/12/2014aggsalesperstorebottomrank.png)
 
 Based on this table, there is evidence pointing to these facts regarding the higher grossing stores:
 - Louisiana has only one store (#34) selling strawberries and it ranks 7th out of 34
@@ -185,11 +185,11 @@ It stands to reason that since the lower grossing stores are in a similar  geogr
 
 <br><b>Distribution Centers for Higher Grossing States</b></br>
 
-![2014distributionsbystateandstoretop](/Users/RichardJamesLopez/Dropbox/RJL_-_Personal/1010/images/2017/12/2014distributionsbystateandstoretop.png)
+![](/images/2017/12/2014distributionsbystateandstoretop.png)
 
 <br><b>Distribution Centers for Lower Grossing States</b></br>
 
-![2014distributioncenterbystateandstorebottom](/Users/RichardJamesLopez/Dropbox/RJL_-_Personal/1010/images/2017/12/2014distributioncenterbystateandstorebottom.png)
+![](/images/2017/12/2014distributioncenterbystateandstorebottom.png)
 
 While there is no clear definition on what constitutes a "Distribution Center", there appears to little overlap between the higher grossing states and the lower grossing states. Initially it seemed like a way to switch supply from the lower grossing states to the higher grossing states if they shared the same "Distribution Center".
 
@@ -209,15 +209,15 @@ These charts below help highlight the possible relationships.
 
 <br><b>Distribution Center and Ranking of Sales</b></br>
 
-![rankingsforsalesbydistributioncenter2](/Users/RichardJamesLopez/Dropbox/RJL_-_Personal/1010/images/2017/12/rankingsforsalesbydistributioncenter2.png)
+![](/images/2017/12/rankingsforsalesbydistributioncenter2.png)
 
 <br><b>Distribution and Profit Margins</b></br>
 
-![profitmarginbydisributioncenters](/Users/RichardJamesLopez/Dropbox/RJL_-_Personal/1010/images/2017/12/profitmarginbydisributioncenters.png)
+![](/images/2017/12/profitmarginbydisributioncenters.png)
 
 <br><b>Distribution Centers and Aggregate Sales</b></br>
 
-![aggregatesalesbydistributioncenter](/Users/RichardJamesLopez/Dropbox/RJL_-_Personal/1010/images/2017/12/aggregatesalesbydistributioncenter.png)
+![](/images/2017/12/aggregatesalesbydistributioncenter.png)
 
 ____
 ### #3 Customer Focus Group
@@ -243,7 +243,7 @@ Here is a line chart of the query above:
 
 <br><b>Line graph of Customer "Age" by Transaction Counts</b></br>
 
-![transactioncountbycustomerage](/Users/RichardJamesLopez/Dropbox/RJL_-_Personal/1010/images/2017/12/transactioncountbycustomerage.png)
+![](/images/2017/12/transactioncountbycustomerage.png)
 
 
 With this foundation, there is a visible trend for customers between ages 30-39 and a peak of transactions at the "Age" of 47. Subsetting customers by "Age" may explain if and and/or why customers increasingly buy strawberries in their 30s and then hit their peak of transactions in their 40s. Also, to remain consistent with other recommendations in this report, analysis is limited to 2014 for several reasons.
@@ -279,11 +279,11 @@ Visualizations for each group by the following store formats:
 
 <br><b>Pie Graph for Customers 30-39 yrs old (in %)</b></br>
 
-![storeformatcompositionfor30yearolds](/Users/RichardJamesLopez/Dropbox/RJL_-_Personal/1010/images/2017/12/storeformatcompositionfor30yearolds.png)
+![](/images/2017/12/storeformatcompositionfor30yearolds.png)
 
 <br><b>Pie Graph for Customer 40-49 yrs old (in %)</b></br>
 
-![storeformatcompositionfor40yearolds](/Users/RichardJamesLopez/Dropbox/RJL_-_Personal/1010/images/2017/12/storeformatcompositionfor40yearolds.png)
+![](/images/2017/12/storeformatcompositionfor40yearolds.png)
 
 This appears to give no real indication that customers have any discernible pattern of story format based on age.
 
@@ -308,17 +308,17 @@ The column for "Customer Tier" is also not terribly intuitive. To suss out its m
 
 Here is a table of the "Customer Tier" query:
 
-![countbycustomertierinpercentallages](/Users/RichardJamesLopez/Dropbox/RJL_-_Personal/1010/images/2017/12/countbycustomertierinpercentallages.png)
+![](/images/2017/12/countbycustomertierinpercentallages.png)
 
 There is an approximately similar proportion of customers by their tiers. Let's see if this holds between our two subsets for age.  
 
 <br><b>Table for 30 yr Olds</b></br>
 
-![countbycustomertierinpercent30s](/Users/RichardJamesLopez/Dropbox/RJL_-_Personal/1010/images/2017/12/countbycustomertierinpercent30s.png)
+![](/images/2017/12/countbycustomertierinpercent30s.png)
 
 <br><b>Table for 40 yr Olds</b></br>
 
-![countbycustomertierinpercent40s](/Users/RichardJamesLopez/Dropbox/RJL_-_Personal/1010/images/2017/12/countbycustomertierinpercent40s.png)
+![](/images/2017/12/countbycustomertierinpercent40s.png)
 
 There appears to be a slight drop off of "Customer Tier" as customers age from their 30s to their 40s. This may be an interesting set of further questions. However, without a full definition of the goes into determining the "Customer Tier" and absent a larger shift between the demographics, this is simply evidence of a slight difference between the demographics.
 
@@ -353,7 +353,7 @@ Narrowing the type of customers to more those who had more than 1 transaction fo
 By adding a select query to filter out these transactions, we get 13,506 unique customers.
 
 
-![customertransactioncountaverage30s](/Users/RichardJamesLopez/Dropbox/RJL_-_Personal/1010/images/2017/12/customertransactioncountaverage30s.png)
+![](/images/2017/12/customertransactioncountaverage30s.png)
 
 With this sample size, we also can calculate the average amount of transactions per repeat customer. It is 3.7038.
 
@@ -376,7 +376,7 @@ This specific criterion is perfect for a customer research survey based on the f
 
 Perform a market research survey on the following list of customers:
 
- ![customeremailaddressbetween2and4](/Users/RichardJamesLopez/Dropbox/RJL_-_Personal/1010/images/2017/12/customeremailaddressbetween2and4.png)
+ ![](/images/2017/12/customeremailaddressbetween2and4.png)
 
 This group of customers represents the most promising and growing demographics (customers in their 30s), those who have bought strawberries between 2-4 times in 2014 and have shown a minimum amount of purchasing while not being a regular customer, and represent $320,326.32 amount of current revenue.
 
@@ -448,7 +448,7 @@ trs_timeline_="1" shift="0"/>
 
 <br><b>Units of Strawberries Sold by State - Full Time Range</b></br>
 
-![unitsofstrawberriesbystate](/Users/RichardJamesLopez/Dropbox/RJL_-_Personal/1010/images/2017/12/unitsofstrawberriesbystate.png)
+![](/images/2017/12/unitsofstrawberriesbystate.png)
 
 
 ___
@@ -483,7 +483,7 @@ This analysis explores the variable of "Customer Tier" in the dataset.
 
 See below for the result:
 
-![Customer Tier by Transanctions](/Users/RichardJamesLopez/Dropbox/RJL_-_Personal/1010/images/2017/12/customer-tier-by-transanctions.png)
+![](/images/2017/12/customer-tier-by-transanctions.png)
 
 ___
 This analysis explores the variable of Age in the dataset.
@@ -549,11 +549,11 @@ This leads to a hypothesis that  a certain region has stronger sales than others
 
 <br><b>Top 10 Grossing Sales by Store - Full Time Range</b></br>
 
- ![Top 10 All Time](/Users/RichardJamesLopez/Dropbox/RJL_-_Personal/1010/images/2017/12/top-10-all-time.png)
+ ![](/images/2017/12/top-10-all-time.png)
 
 <br><b>Bottom 10 Grossing Sales by Store - Full Time Range</b></br>
 
- ![Bottome Time All Time](/Users/RichardJamesLopez/Dropbox/RJL_-_Personal/1010/images/2017/12/bottome-time-all-time.png)
+ ![](/images/2017/12/bottome-time-all-time.png)
 
 The only problem with this is that this time range is for the whole timeline of our dataset. If a store was opened halfway through this period, it would be unreasonable to expect them to rival other stores across the country that may have been selling strawberries since 2011.
 
@@ -568,12 +568,12 @@ To address this select rows from the tables that occur in 2014.
 
 <br><b>Top Ranking Stores in Gross Sales - 2014</b></br>
 
- ![Top_Rankng_1994](/Users/RichardJamesLopez/Dropbox/RJL_-_Personal/1010/images/2017/12/top-rankng-1994.png)
+ ![](/images/2017/12/top-rankng-1994.png)
 
 
 <br><b>Bottom Ranking Stores in Gross Sales - 2014</b></br>
 
- ![Bottom_Ranking_2014](/Users/RichardJamesLopez/Dropbox/RJL_-_Personal/1010/images/2017/12/bottom-ranking-2014.png)
+ ![](/images/2017/12/bottom-ranking-2014.png)
 
 
 ### <u>References</u>
